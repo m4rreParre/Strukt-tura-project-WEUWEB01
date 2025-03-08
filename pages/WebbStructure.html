@@ -1,15 +1,153 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strukt-Ura - Webb Struktur</title>
 </head>
+
 <body>
     <head>
         <div id="navbar"></div>
     </head>
+    <main>
+        <section id="flexbox-section">
+            <article class="flexbox-intro">
+                <h1>Hur fungerar Flexbox?</h1>
+                <p>Flexbox (Flexible Box Layout) är ett CSS-layoutsystem som används för att skapa flexibla och
+                    responsiva layouter. Det används främst för att ordna element i en rad (row) eller kolumn (column)
+                    på ett smidigt sätt.</p>
+            </article>
 
+            <article>
+                <h2>Grundläggande begrepp inom Flexbox:</h2>
+                <ul>
+                    <li>
+                        <p>Flex container: Det element som innehåller flexibla barn. Man aktiverar Flexbox genom att
+                            sätta <code>display: flex;</code> på containern.</p>
+                    </li>
+                    <li>
+                        <p>Flex items: De element som ligger inuti flex-containern och blir flexibla.</p>
+                    </li>
+                    <li>
+                        <p>Main axis: Den huvudsakliga axeln i flex-containern, antingen rad eller kolumn.</p>
+                    </li>
+                    <li>
+                        <p>Cross axis: Den sekundära axeln i flex-containern, antingen rad eller kolumn.</p>
+                    </li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <article>
+                <h2>Exempel på en header med flexbox</h2>
+                <!--Importera embedded code sak här-->
+                <!--Css-->
+                <!---->
+                <!--Html-->
+            </article>
+
+            <article>
+                <h2>Vad gör denna kod?</h2>
+                <ul>
+                    <li>
+                        <p><code>display: flex;</code> på <code>.header</code> gör att den blir en flex-container.</p>
+                    </li>
+                    <li>
+                        <p><code>justify-content: space-between;</code> gör att loggan hamnar till vänster och länkarna
+                            till höger.</p>
+                    </li>
+                    <li>
+                        <p><code>align-items: center;</code> centrerar innehållet vertikalt i headern.</p>
+                    </li>
+                    <li>
+                        <p><code>.nav</code> är också en flex-container för att länkarna ska hamna på en rak linje med
+                            <code>display: flex;</code>.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section id="css-grid-section">
+            <article>
+                <h1>Vad är CSS Grid?</h1>
+                <p>CSS Grid Layout är ett kraftfullt tvådimensionellt layoutsystem som används för att skapa komplexa
+                    layouter på webbsidor. Det gör det möjligt att skapa både rader och kolumner och placera element
+                    exaktp </p>
+            </article>
+
+            <article>
+                <h2>Grundläggande begrepp inom CSS Grid:</h2>
+                <ul>
+                    <li>
+                        <p>Grid container: Det element som innehåller en grid-layout. Man aktiverar Grid genom att sätta
+                            <code>display: grid;</code> på containern.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>Grid items: De element som ligger inuti en grid-container och anpassar sig efter rutnätet.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>Grid lines: De osynliga linjer som delar upp rader och kolumner.</p>
+                    </li>
+
+                    <li>
+                        <p>Grid tracks: De faktiska raderna och kolumnerna i rutnätet.</p>
+                    </li>
+
+                    <li>
+                        <p>Grid areas: Områden i rutnätet som kan innehålla flera grid items.</p>
+                    </li>
+            </article>
+            <hr>
+            <article>
+                <h2>Exempel på en header med CSS Grid</h2>
+                <p>En header kan skapas med Grid för att placera logotypen, navigeringen och eventuellt en sökruta i ett organiserat rutnät.</p>
+                <!--Importera embedded code sak här-->
+                <!--Css-->
+                <!---->
+                <!--Html-->
+            </article>
+            <article>
+                <h2>Vad gör denna kod?</h2>
+                <ul>
+                    <li>
+                        <p><code>display: grid;</code> på <code>.header</code> gör att den blir en grid-container.</p>
+                    </li>
+                    <li>
+                        <p><code>grid-template-columns: 1fr 2fr 1fr;</code> skapar tre kolumner med olika bredder.</p>
+                    </li>
+                    <li>
+                        <p><code>grid-template-rows: 100px;</code> skapar en rad med en fast höjd.</p>
+                    </li>
+                    <li>
+                        <p><code>grid-column: 2;</code> placerar <code>.nav</code> i den andra kolumnen.</p>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+        <aside id="search-bar">
+            <button class="filter-btn">Filter ✖</button>
+            <input type="text" id="searchInut" placeholder="Sök efter artiklar.."/>
+            <ul>
+                <li><a href="#flexbox-section">Flexbox?</a></li>
+                <li><a href="#css-grid-section">CSS Grid?</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
     <script src="/js/navbar.js"></script>
 </body>
+
 </html>
