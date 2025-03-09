@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strukt-Ura</title>
     <link rel="shortcut icon" href="media/icons/main-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/main-style.css">
+    <link rel="stylesheet" href="/styles/index-page.css">
+    <link rel="stylesheet" href="/styles/shared.css">
 </head>
 
 <body>
-
-    <head>
-        <!--Add background in css (entire header)-->
-        <button id="open-menu"></button>
+    <header>
         <div id="navbar"></div>
 
-        <h1>Strukt-Ura</h1>
-        <h2>vill du veta hur du <span></span></h2>
+
+        <h1>Strukt<span>-</span>Ura</h1>
+        <!--Se ifall du kan få bort br på dator på nått sätt eller undvika den helt-->
+        <h2>vill du veta hur du <br><span id="header-typed"></span></h2>
 
         <button>starta här</button>
-    </head>
+    </header>
     <section>
         <p>Tips och verktyg som hjälper dig att strukturera din webbplats för både <b>användare</b> och
             <b>sökmotorer.</b>
@@ -28,7 +28,7 @@
     </section>
     <main>
         <section>
-            <h2>Lär dig layout</h2>
+            <h2>Lär dig layout!</h2>
             <p>Upptäck och lär dig olika tekniker för att skapa webblayouts</p>
         </section>
 
@@ -47,14 +47,14 @@
             <article>
                 <h3>Vad kommer du att lära dig?</h3>
 
-                <h4><b>Flexbox</b></h4>
+                <h4><b>➤ Flexbox</b></h4>
                 <p>Utforska CSS Grid och hur du bygger komplexa, responsiva layouter med hjälp av ett rutnätssystem.</p>
 
-                <h4><b>CSS Grid</b></h4>
+                <h4><b>➤ CSS Grid</b></h4>
                 <p>Lär dig att använda Flexbox för att skapa flexibla och dynamiska layouter. Perfekt för allt från
                     enkla centrerade element till avancerade sidstrukturer.</p>
 
-                <h4><b>Responsiv design</b></h4>
+                <h4><b>➤ Responsiv design</b></h4>
                 <p>Förstå grunderna i responsiv design och lär dig hur du anpassar dina webbsidor för olika
                     skärmstorlekar med hjälp av media queries</p>
             </article>
@@ -91,8 +91,9 @@
             <a href="/pages/WebbStructure.html#css-grid-section">
                 <article class="boxed-article-preview">
                     <h4>Css - Grid</h4>
-                    <p class="big-text">Hur kan vi använda oss utav CSS Grid för att strukturera?</p>
-                    <p class="small-text">i använder oss av CSS Grid för att skapa layoutar med rader och kolumner...</p>
+                    <p class="big-text">Hur kan vi använda oss utav CSS Grid för att strukturera ?</p>
+                    <p class="small-text">i använder oss av CSS Grid för att skapa layoutar med rader och kolumner...
+                    </p>
                 </article>
             </a>
             <a href="pages/WebbStructure.html#flexbox-section">
@@ -107,6 +108,8 @@
     <footer></footer>
 
     <script src="/js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="/js/typed.js"></script>
 </body>
 
 </html>
