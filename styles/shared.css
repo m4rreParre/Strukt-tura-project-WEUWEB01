@@ -18,7 +18,7 @@ nav > a > img {
   width: 90px;
   height: auto;
 }
-nav > button > img {
+ button > img {
   width: 60px;
   height: auto;
 }
@@ -31,7 +31,25 @@ nav {
 }
 
 nav > ul {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background-color: #2e2e2ef8;
+  z-index: 1;
+  width: 60vw;
+  height: 100vh;
+  
+}
+nav > ul > li {
+  margin: 10px;
+  list-style-type: none;
+  text-align: end;
+  padding: 10px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+nav > ul > li > a {
+  color: var(--text-color);
 }
 nav > button {
   background-color: transparent;
