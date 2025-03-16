@@ -111,7 +111,7 @@ h4 {
   margin: 30px 0 30px 0;
 }
 
-footer{
+footer {
   padding-bottom: 40px;
 }
 
@@ -147,38 +147,52 @@ footer > section > p > a {
 }
 
 @media screen and (min-width: 768px) {
-  nav > button{
+  nav > button {
     display: none;
   }
- body > header > div >nav{
+  body > header > div > nav {
     display: flex;
     justify-content: space-between;
-    width: 98vw
+    width: 98vw;
   }
   nav > ul {
     height: 100%;
     position: relative;
     justify-content: flex-end;
   }
-  nav, nav > ul {
+  nav,
+  nav > ul {
     display: flex;
     width: 100%;
     background-color: transparent;
   }
   nav > ul > li {
-    
     border-bottom: none;
-
   }
-  nav > ul > li > a{
+  nav > ul > li > a {
     display: inline;
     transition: color 0.2s ease-in-out;
   }
-  nav > ul > li > a:hover{
+  nav > ul > li > a:hover {
     color: var(--accent-color);
   }
   nav > ul > li:first-of-type {
     display: none;
   }
-  
+}
+
+@media (min-width: 1281px) {
+  body {
+    font-size: 22px;
+  }
+  body p,
+  body section p {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  body > header > h2 {
+    font-size: 2rem;
+  }
 }

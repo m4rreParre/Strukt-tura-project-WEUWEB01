@@ -132,7 +132,6 @@ main > section > section:last-of-type {
 }
 /*Laptop*/
 @media (min-width: 1025px) {
-
   header {
     background-image: url(/media/images/Header-Background-02-pc.webp);
     background-size: cover;
@@ -141,7 +140,7 @@ main > section > section:last-of-type {
     width: 15%;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
-  header > button:hover{
+  header > button:hover {
     background-color: var(--accent-color);
     color: var(--text-color);
   }
@@ -157,25 +156,11 @@ main > section > section:last-of-type {
 }
 /*karge desktop - monitors*/
 @media (min-width: 1281px) {
-
-  body {
-    font-size: 22px;
-  }
-  body p,
-  body section p {
-    font-size: 1.2rem;
-  }
-  header{
+  header {
     height: 50vh;
     justify-content: space-around;
   }
 
-  h1 {
-    font-size: 8rem;
-  }
-  body > header > h2 {
-    font-size: 2rem;
-  }
   body > main > section > section:first-of-type {
     margin-left: 60px;
   }
