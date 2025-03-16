@@ -18,7 +18,7 @@ nav > a > img {
   width: 90px;
   height: auto;
 }
- button > img {
+button > img {
   width: 60px;
   height: auto;
 }
@@ -39,7 +39,6 @@ nav > ul {
   z-index: 2;
   width: 60vw;
   height: 100vh;
-  
 }
 nav > ul > li {
   margin: 10px;
@@ -50,17 +49,19 @@ nav > ul > li {
 }
 nav > ul > li > a {
   color: var(--text-color);
+  width: 100%;
+  display: block;
 }
 nav > button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 60vw;
+  width: 40vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
@@ -108,4 +109,39 @@ h4 {
   font-weight: 100;
   font-family: monospace, sans-serif;
   margin: 30px 0 30px 0;
+}
+
+footer{
+  padding-bottom: 40px;
+}
+
+footer,
+footer > section {
+  display: flex;
+  background-color: var(--secondary-color);
+  height: 10vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer > section {
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+footer > section > p {
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+footer > section > p > a {
+  color: var(--accent-color);
+  margin-left: 10px;
+}
+.fa-github {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px;
 }
