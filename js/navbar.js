@@ -14,3 +14,15 @@ function openBtn() {
   document.querySelector(".overlay").style.display = "flex";
   document.querySelector("nav > ul").setAttribute('aria-expanded', 'true');
 }
+
+window.addEventListener("resize", function() {
+  if (window.innerWidth >= 768) {
+    // Ensure navbar is shown and menu is closed
+    document.querySelector("nav > ul").style.display = "flex";
+    document.querySelector(".overlay").style.display = "none";
+    document.querySelector("nav > ul").setAttribute('aria-expanded', 'false');
+  } else {
+    // Ensure mobile menu is hidden on mobile view
+    document.querySelector("nav > ul").style.display = "none";
+  }
+});
