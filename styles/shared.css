@@ -145,3 +145,40 @@ footer > section > p > a {
   text-align: center;
   margin: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  nav > button{
+    display: none;
+  }
+ body > header > div >nav{
+    display: flex;
+    justify-content: space-between;
+    width: 98vw
+  }
+  nav > ul {
+    height: 100%;
+    position: relative;
+    justify-content: flex-end;
+  }
+  nav, nav > ul {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+  }
+  nav > ul > li {
+    
+    border-bottom: none;
+
+  }
+  nav > ul > li > a{
+    display: inline;
+    transition: color 0.2s ease-in-out;
+  }
+  nav > ul > li > a:hover{
+    color: var(--accent-color);
+  }
+  nav > ul > li:first-of-type {
+    display: none;
+  }
+  
+}
