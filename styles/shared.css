@@ -195,4 +195,7 @@ footer > section > p > a {
   body > header > h2 {
     font-size: 2rem;
   }
+  body > header > nav > ul > li > a {
+    
+  }
 }
