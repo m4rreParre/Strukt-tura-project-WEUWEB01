@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strukt-Ura - Webb Struktur</title>
+    <link rel="stylesheet" href="/styles/webbstructure.css">
     <link rel="stylesheet" href="/styles/shared.css">
     <link rel="stylesheet" href="/styles/codemirror.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
@@ -21,9 +22,10 @@
     </header>
 
     <main>
+        <h2 class="intro-header">Hur fungerar Flexbox?</h2>
         <section id="flexbox-section">
             <article class="flexbox-intro">
-                <h2>Hur fungerar Flexbox?</h2>
+
                 <p>Flexbox (Flexible Box Layout) är ett CSS-layoutsystem som används för att skapa flexibla och
                     responsiva layouter. Det används främst för att ordna element i en rad (row) eller kolumn (column)
                     på ett smidigt sätt.</p>
@@ -48,10 +50,12 @@
                 </ul>
             </article>
 
-            <hr>
+
 
 
             <article>
+                <h2>Exempel:</h2>
+                <img src="/media/images/codeexample-flexbox.png" alt="">
                 <h2>Vad gör denna kod?</h2>
                 <ul>
                     <li>
@@ -66,19 +70,27 @@
                     </li>
                     <li>
                         <p><code>.nav</code> är också en flex-container för att länkarna ska hamna på en rak linje med
-                            <code>display: flex;</code>.</p>
+                            <code>display: flex;</code>.
+                        </p>
                     </li>
                 </ul>
             </article>
 
         </section>
-
+        <hr>
+        <h2 class="intro-header" >Vad är CSS Grid?</h2>
         <section id="css-grid-section">
             <article>
-                <h2>Vad är CSS Grid?</h2>
+
                 <p>CSS Grid Layout är ett kraftfullt tvådimensionellt layoutsystem som används för att skapa komplexa
                     layouter på webbsidor. Det gör det möjligt att skapa både rader och kolumner och placera element
                     exakt.</p>
+            </article>
+
+            <article>
+                <p>För att komma igång med CSS Grid börjar du med att göra en container till en grid genom att använda
+                <code>display: grid;</code>. Sedan kan du definiera rader och kolumner med till exempel
+                <code>grid-template-columns</code> och <code>grid-template-rows</code>.</p>
             </article>
 
             <article>
@@ -254,19 +266,15 @@ body {
 
         </section>
 
-        <aside id="search-bar">
-            <nav>
-                <button class="filter-btn">Filter </button>
-                <input type="text" id="searchInut" placeholder="Sök efter artiklar..">
-                <ul>
-                    <li><a href="#flexbox-section">Flexbox?</a></li>
-                    <li><a href="#css-grid-section">CSS Grid?</a></li>
-                </ul>
-            </nav>
-        </aside>
+
     </main>
-    
+
     <footer>
+        <section>
+            <a href="https://github.com/m4rreParre"> <i class="fa fa-github" aria-hidden="true"></i></a>
+            <p>Strukt-Ura &copy;2025</p>
+            <p>Skapad av<a href="https://github.com/m4rreParre">m4rreParre</a></p>
+        </section>
     </footer>
     <script src="/js/navbar.js"></script>
     <script src="/js/codemirror.js"></script>

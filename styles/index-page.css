@@ -118,9 +118,6 @@ main > section > section:last-of-type > a {
 main > section > section:last-of-type > a:hover .boxed-article-preview {
   background-color: var(--secondary-color);
 }
-main > section > section:last-of-type {
-  margin-right: 70px;
-}
 
 /* ---Media queries--- */
 /* Ipad */

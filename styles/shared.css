@@ -99,6 +99,29 @@ h4 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+code {
+  font-size: 0.9rem;
+  background-color: var(--secondary-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  color: #ececec;
+}
+article{
+  margin-bottom: 1rem;
+}
+article:last-of-type{
+  margin-bottom: 5rem;
+}
+article > img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem 0;
+}
+article > ul > li {
+  margin: 0 0 0 0.8rem;
+  list-style-type: "- ";
+}
+
 .big-text {
   font-size: 1.5rem;
   font-weight: 100;
@@ -120,8 +143,8 @@ footer > section {
   display: flex;
   background-color: var(--secondary-color);
   height: 10vh;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: center;
 }
 
 footer > section {

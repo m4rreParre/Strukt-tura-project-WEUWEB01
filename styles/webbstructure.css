@@ -1,0 +1,29 @@
+header{
+    background-image: url(/media/images/Header-Backkground-03.webp);
+}
+main > section {
+  padding: 0 1rem;
+}
+
+h2:first-of-type {
+  font-size: 2rem;
+  width: 100%;
+}
+.intro-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
