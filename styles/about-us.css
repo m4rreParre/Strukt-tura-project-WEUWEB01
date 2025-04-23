@@ -64,7 +64,7 @@ body > main > article {
   text-decoration: underline;
   margin: 0;
 }
-#card {
+.card {
   border: 1px solid #ffffff56;
   border-radius: 10px;
   margin: 10px;
@@ -78,18 +78,18 @@ body > main > article {
   min-width: 33%;
   max-width: 33%;
 }
-#card > i {
+.card > i {
   font-size: 3rem;
 }
-#card > h2 {
+.card > h2 {
   font-size: 1.5rem;
 }
-#card > h3 {
+.card > h3 {
   color: var(--text-color);
   font-size: 1.1rem;
   font-weight: 600;
 }
-#card > blockquote {
+.card > blockquote {
   text-align: center;
   line-height: 1.6;
   word-wrap: break-word;
