@@ -1,5 +1,5 @@
-header{
-    background-image: url(/media/images/Header-Backkground-03.webp);
+header {
+  background-image: url(/media/images/Header-Backkground-03.webp);
 }
 main > section {
   padding: 0 1rem;
@@ -26,4 +26,40 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-header {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1.5rem;
+    max-width: 70vw;
+  }
+  main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section > article > p,
+  section > article > ul {
+    padding-left: 15%;
+  }
+  .editor-container{
+    min-width: 40vw;
+    max-width: 40vw;
+    height: 45vh;
+  }
+  iframe{
+    min-width: 40vw;
+    max-width: 12px;
+    height: 45vh;
+  }
 }
