@@ -28,6 +28,7 @@ article {
   align-items: center;
 }
 
+
 @media screen and (min-width: 768px) {
   .intro-header {
     flex-direction: row;
@@ -55,11 +56,12 @@ article {
   .editor-container{
     min-width: 40vw;
     max-width: 40vw;
-    height: 45vh;
+    height: max(40%, 65vh);
   }
-  iframe{
+  #preview1, #preview2 {
     min-width: 40vw;
     max-width: 12px;
-    height: 45vh;
+   
+   height: 400px; 
   }
 }

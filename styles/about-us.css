@@ -29,6 +29,19 @@ header > button {
   font-size: 20px;
   border-radius: 10px;
   background-color: rgb(212, 212, 212);
+  transition: 0.3s;
+}
+header > h2{
+  text-align: center;
+}
+header > button:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+ main > section > aside > p{
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: monospace, sans-serif;
 }
 body > section {
   display: flex;
@@ -45,14 +58,14 @@ body > section > p {
   font-weight: bold;
   font-size: 1.4rem;
 }
-body > main{
-    overflow-x: hidden;
+body > main {
+  overflow-x: hidden;
 }
 body > main > article {
-    margin: 30px;
+  margin: 30px;
 }
 .big-header {
-    margin: 30px;
+  margin: 30px;
   font-size: 2rem;
 }
 .article-subheader {
@@ -65,18 +78,26 @@ body > main > article {
   margin: 0;
 }
 .card {
+  position: absolute;
+  left: 100%;
   border: 1px solid #ffffff56;
   border-radius: 10px;
   margin: 10px;
   padding: 14px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #4242424f;
+  max-height: 220px;
   min-height: 200px;
   min-width: 33%;
   max-width: 33%;
+  animation: slide 20s linear infinite;
+}
+body:has(.card:hover) .card {
+  animation-play-state: paused;
 }
 .card > i {
   font-size: 3rem;
@@ -99,12 +120,9 @@ body > main > article {
 
 /*animation for carusel */
 @keyframes slide {
-    0%{
-        transform: translateX(60%);
-    }
-    100%{
-        transform: translateX(-48%);
-    }
+  to {
+    transform: translateX(-150vw);
+  }
 }
 
 #person-carusel {
@@ -113,8 +131,58 @@ body > main > article {
   justify-content: center;
   align-items: center;
   padding: 10px 0 10px 0;
-  animation: slide 20s infinite linear;
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 
+  );
 }
-#person-carusel:hover {
-  animation-play-state: paused;
+#card1 {
+  animation-delay: calc(20s / 3 * (3 - 1) * -1);
 }
+#card2 {
+  animation-delay: calc(20s / 3 * (3 - 2) * -1);
+}
+#card3 {
+  animation-delay: calc(20s / 3 * (3 - 3) * -1);
+}
+#social-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;  
+}
+#social-icons> a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+}
+#social-icons> a > i{
+  font-size: 3rem;
+  color: var(--primary-color);
+  transition: 0.3s;
+
+}
+#social-icons> a:hover > i{
+  color: var(--text-color);
+}
+body > footer > section {
+  height: 0;
+  border: none;
+}
+body > footer {
+  padding: 0;
+}
+

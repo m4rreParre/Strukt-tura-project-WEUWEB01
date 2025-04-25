@@ -39,3 +39,13 @@ iframe {
     border-radius: 5px;
     background: #313438;
 }
+.CodeMirror{
+    height: auto;
+    min-height: 300px;
+    max-height: 300px;
+    overflow: auto;
+    background-color: #20262e;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
