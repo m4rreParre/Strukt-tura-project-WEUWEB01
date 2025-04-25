@@ -31,14 +31,14 @@ header > button {
   background-color: rgb(212, 212, 212);
   transition: 0.3s;
 }
-header > h2{
+header > h2 {
   text-align: center;
 }
 header > button:hover {
   background-color: var(--accent-color);
   color: var(--text-color);
 }
- main > section > aside > p{
+main > section > aside > p {
   font-size: 1.5rem;
   text-align: center;
   font-family: monospace, sans-serif;
@@ -136,10 +136,10 @@ body:has(.card:hover) .card {
   overflow: hidden;
   mask-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0) 
+    rgba(0, 0, 0, 0)
   );
 }
 #card1 {
@@ -151,15 +151,15 @@ body:has(.card:hover) .card {
 #card3 {
   animation-delay: calc(20s / 3 * (3 - 3) * -1);
 }
-#social-icons{
+#social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
-  flex-wrap: wrap;  
+  margin: 40px 0;
+  flex-wrap: wrap;
 }
-#social-icons> a{
+#social-icons > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,14 +169,17 @@ body:has(.card:hover) .card {
   color: var(--text-color);
   text-align: center;
 }
-#social-icons> a > i{
+#social-icons > a > i {
   font-size: 3rem;
   color: var(--primary-color);
   transition: 0.3s;
-
 }
-#social-icons> a:hover > i{
+#social-icons > a:hover > i {
   color: var(--text-color);
+}
+aside > p {
+  background-color: var(--accent-color);
+  color: var(--background-color);
 }
 body > footer > section {
   height: 0;
@@ -186,3 +189,18 @@ body > footer {
   padding: 0;
 }
 
+@media screen and (min-width: 1500px) {
+  .big-header {
+    font-size: 2.5rem;
+  }
+  .article-subheader {
+    font-size: 2rem;
+  }
+  main > article > p {
+    font-size: 1.5rem;
+  }
+  main > article {
+    max-width: 80%;
+    max-height: 200px;
+  }
+}
