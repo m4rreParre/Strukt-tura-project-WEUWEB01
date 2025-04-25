@@ -146,9 +146,9 @@ main > section:last-of-type {
     background-color: var(--text-color);
     margin: 20px auto;
   }
-  main > section:last-of-type{
-  }
   .video-cards {
-    width: 650px;
+    width: 550px;
+    margin: 30px;
   }
+
 }
