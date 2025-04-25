@@ -112,10 +112,19 @@ main > section:last-of-type {
   display: flex;
   flex-direction: column;
   width: 280px;
+
 }
 .video-cards > a {
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
+}
+.video-cards:hover p{
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
+.video-cards:hover a {
+    transform: scale(1.05);
 }
 .video-cards > a > img {
   width: 100%;
@@ -128,6 +137,13 @@ main > section:last-of-type {
   font-size: 1rem;
   font-family: monospace, sans-serif;
 }
+body > footer > section {
+    height: 0;
+    border: none;
+  }
+  body > footer {
+    padding: 0;
+  }
 @media screen and (min-width: 800px) {
   main > section:first-of-type {
     margin: 70px 50px;
