@@ -28,7 +28,6 @@ article {
   align-items: center;
 }
 
-
 @media screen and (min-width: 768px) {
   .intro-header {
     flex-direction: row;
@@ -53,15 +52,16 @@ article {
   section > article > ul {
     padding-left: 15%;
   }
-  .editor-container{
+  .editor-container {
     min-width: 40vw;
     max-width: 40vw;
     height: max(40%, 65vh);
   }
-  #preview1, #preview2 {
+  #preview1,
+  #preview2 {
     min-width: 40vw;
     max-width: 12px;
-   
-   height: 400px; 
+
+    height: 400px;
   }
 }

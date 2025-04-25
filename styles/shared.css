@@ -106,10 +106,10 @@ code {
   border-radius: 0.2rem;
   color: #ececec;
 }
-article{
+article {
   margin-bottom: 1rem;
 }
-article:last-of-type{
+article:last-of-type {
   margin-bottom: 5rem;
 }
 article > img {
@@ -219,4 +219,3 @@ footer > section > p > a {
     font-size: 2rem;
   }
 }
-
